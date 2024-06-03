@@ -1,0 +1,80 @@
+
+#email-form {
+    border-radius: 5px;
+    background-color: var(--rtc-color-400);
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 80%;
+    max-width: 400px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+#email-form > div {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 5px;
+    width: 90%;
+}
+
+#email-form label {
+    color: var(--rtc-color-300);
+}
+
+#email-form .input-form {
+    outline: none;
+    border: none;
+    background-color: var(--rtc-color-400);
+    border-bottom: 2px solid var(--rtc-color-000);
+    padding: 7px 0px 7px 0px ;
+    width: 90%;
+}
+
+#email-form button {
+    padding: 7px 12px;
+    background-color: var(--rtc-color-200);
+    border-style: none;
+    border-radius: 3px;
+    margin-top: 30px;
+    transition: all 0.5s;
+}
+
+#email-form button:hover {
+    cursor: pointer;
+    background-color: var(--rtc-color-100);
+}
+
+#errorMessage {
+    font-size: 12px;
+    color: var(--rtc-color-200);
+}
+#successMessage {
+    font-size: 12px;
+    color: var(--rtc-color-100);
+}
+
+
+#email-form.loading {
+    outline: 2px solid var(--rtc-color-200);
+    animation: loading_animation 1s infinite linear;
+}
+
+
+@keyframes loading_animation {
+    0% {
+        outline: 2px solid var(--rtc-color-200);  
+    }
+
+    50% {
+        outline: 5px solid var(--rtc-color-100);
+    }
+    100% {
+        outline: 2px solid var(--rtc-color-200);
+    }
+}
